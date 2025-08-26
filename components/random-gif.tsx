@@ -17,7 +17,7 @@ export default function RandomGif() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % gifs.length); 
-    }, 2000); 
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
