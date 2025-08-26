@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const gifs = [
@@ -22,7 +23,7 @@ export default function RandomGif() {
   }, []);
 
   return (
-    <img
+    <Image
       src={gifs[current]}
       alt="Random gif"
       className="w-48 h-48 object-contain transition-opacity duration-500"

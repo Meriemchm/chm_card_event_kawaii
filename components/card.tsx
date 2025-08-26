@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import Image from "next/image";
 
 interface CardProps {
   src: string;
@@ -10,7 +10,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ src, handleClick, text }) => {
   return (
     <>
-      <img
+      <Image
         src={src}
         alt="Cute animation"
         className="w-32 h-32 object-contain"
